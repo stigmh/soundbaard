@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: Helvetica, Tahoma, Arial, sans-serif;
+	background-color: #000;
+}
+
+h1 {
+	opacity: 0.4;
+	font-size: 2vw;
+	padding: 3%;
+	color: #fff;  
+}
+
+div, button {
+	text-align: center;
+}
+
+button {
+	background: none;
+	font-size: 6vw;
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+}
+
+button:hover {
+	filter: brightness(1.76);
+	cursor: pointer;
+}
+
+button:active {
+	filter: brightness(0.4);
+}
+
+#top {
+	position: fixed;
+	left: 0;
+	right: 0;
+	opacity: 0.8;
+	padding: 2%;
+	display: block;
+	background-color: #AA00FF;
+}
+
+#top, #top input {
+	font-size: 3vw;
+}
+
+#top input {
+	padding: 0.5%;
+}
+
+#content {
+	padding-top: 8%;
+}
+
+#objects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.object {
+	display: flex;
+	align-items: center;
+	padding: 1%;
+	width: 48%;
+	background-color: #333;
+	font-size: 3vw;
+	color: #ddd;
+	margin-bottom: 1%;
+	overflow: hidden;
+}
+
+.playing {
+	background-color: #AA00FF;
+}
+
+.object div:first-child {
+	padding: 4%;
+}
+
+.wrap {
+	width: 100%;
+}
+
+.wrap div {
+	padding: 4% 0;
+}
+
+.favofilter {
+	opacity: 0.4;
+}
+
+.favofilter:hover {
+	cursor: pointer;
+}
+
+.favoactive {
+	opacity: 1.0;
+}
+
+audio, .hidden {
+	display: none;
+}
+
+@media (orientation: landscape) {
+	.object {
+		width: 22%;
+	}
+}
+
+@media (orientation: portrait) {
+	.object {
+		width: 47%;
+	}
+
+	h1 {
+		font-size: 4vw;
+		padding: 6%;
+	}
+
+	button {
+		font-size: 14vw;
+	}
+
+	.object {
+		font-size: 6vw;
+	}
+
+	#top {
+		padding: 6%;
+	}
+
+	#top, #top input {
+		font-size: 6vw;
+	}
+
+	#top input {
+		width: 60%;
+	}
+
+	#content {
+		padding-top: 20%;
+	}
+}
